@@ -1,6 +1,6 @@
 # Instructions for lab 1
 
-Start golang online environment on [Katacoda](https://www.katacoda.com/courses/golang/playground)
+Start golang online environment on [Katacoda](https://www.katacoda.com/wozniakjan/scenarios/soa1)
 or your computer.
 
 Get the source code
