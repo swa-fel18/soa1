@@ -54,26 +54,35 @@ class: center, middle
 
 # Course overview
 
-1. SOA I
-1. SOA II
+1. SOA I - introduction
+1. SOA II - how to run and manage webapps in todays
 1. Basic principals of cloud applications and their architecture I
 1. Basic principals of cloud applications and their architecture II
 1. Security and Trust for Software Architecture
 
 ---
 
-# Participation in the class
+class: center, middle
 
-* Lectures
-* Labs
-* Reading assignments
+# Service-oriented Architecture I
 
 ---
 
-# SOA I
+# Service-oriented Architecture I
 
-Software capabilities delivered and consumed as services through well
-defined and understood interfacaces
+> A service-oriented architecture is a style of multitier computing that
+helps organizations share logic and data among multiple applications
+and usage modes.
+-- Roy Schulte in 1996 [*]
+
+.small[[*] https://www.gartner.com/doc/302868/service-oriented-architectures-]
+
+---
+
+# Service-oriented Architecture II
+
+A set of components which can be invoked, and whose interface descriptions
+can be published and discovered
 
 > All service interfaces, without exception, must be designed from the
 ground up to be externalizable. That is to say, the team must plan and
@@ -85,11 +94,54 @@ Several ways how to describe these interfaces were created, but
 Representational State Transfer (REST) has become the most popular.
 
 .small[[*] https://apievangelist.com/2012/01/12/the-secret-to-amazons-success-internal-apis/]
+.small[https://msdn.microsoft.com/en-us/library/aa480021.aspx]
+
 ---
 
-#
+# Development of Service-oriented Architecture
+
+* SOA emerged in the 90's
+* Became largely popular with the introduction of SOAP/XML in 2002
+* Grew on complexity so much that many people stopped using this
+term when talking about software archtecture
+
+---
+
+# SOA vs microservices
+![SOA vs microservices](img/soa-google-search.png)
+
+---
+
+# Characteristics of SOA
+
+* Entire application bundled together
+  * Front-end, back-end, login service, etc.
+  * Code base split into 'modules'
+  * Soft bundaries are often broken after time
+* Easy to develop, run and manage
+  * ...until the application becomes too big
+  * Difficult to maintain
+* Any change to the source code results in a redeployment of the entire application
 
 
+---
+
+# Microservice-based Architecture (MSA)
+
+> In short, the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.[*]
+-- James Lewis and Martin Fowler
+
+.small[[*] https://martinfowler.com/microservices/]
+
+---
+
+class: center, middle
+
+## Lab based on Kelsey Hightower's great introduction to "Scalable microservices on Kubernetes"
+
+https://eu.udacity.com/course/scalable-microservices-with-kubernetes--ud615
+
+https://github.com/udacity/ud615
 
     </textarea>
     <script src="remark-latest.min.js">
