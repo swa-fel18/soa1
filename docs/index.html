@@ -55,7 +55,7 @@ class: center, middle
 # Course overview
 
 1. SOA I - introduction
-1. SOA II - how to run and manage webapps in todays
+1. SOA II - how to run and manage webapps in todays world
 1. Basic principals of cloud applications and their architecture I
 1. Basic principals of cloud applications and their architecture II
 1. Security and Trust for Software Architecture
@@ -65,6 +65,8 @@ class: center, middle
 class: center, middle
 
 # Service-oriented Architecture I
+
+https://github.com/swa-fel18/soa1
 
 ---
 
@@ -114,14 +116,15 @@ term when talking about software archtecture
 
 # Characteristics of SOA
 
-* Entire application bundled together
+* Entire application bundled together (.war)
   * Front-end, back-end, login service, etc.
   * Code base split into 'modules'
-  * Soft bundaries are often broken after time
+  * Soft bundaries often broken after time
 * Easy to develop, run and manage
   * ...until the application becomes too big
   * Difficult to maintain
-* Any change to the source code results in a redeployment of the entire application
+* Any change to the source code results in a
+redeployment of the entire application
 
 
 ---
@@ -135,13 +138,39 @@ term when talking about software archtecture
 
 ---
 
+# SOA vs MSA
+
+Are they really different or is MSA natural development of SOA?[*]
+
+* Component
+  * Software 'module' vs independent process
+* Technology stack
+  * One runtime / language vs different stack per service
+
+
+.small[[*] https://www.infoq.com/minibooks/download/emag-microservices]
+
+---
+
 class: center, middle
 
 ## Lab based on Kelsey Hightower's great introduction to "Scalable microservices on Kubernetes"
 
-https://eu.udacity.com/course/scalable-microservices-with-kubernetes--ud615
-
 https://github.com/udacity/ud615
+
+---
+
+# Going further
+
+If you've managed to run the code on Katacoda and go through the code, good job!
+That's all what's needed for succesfully going through this class.
+
+If you follow the links provided here and read through, even better!
+
+If you decide to go through the [udacity course](https://eu.udacity.com/course/scalable-microservices-with-kubernetes--ud615), you'll gain practical
+experience with running microservices in modern runtime environments
+and you'll be well equiped for you future carrier as a software engineer.
+However, no extra points are provided for this ;-)
 
     </textarea>
     <script src="remark-latest.min.js">
